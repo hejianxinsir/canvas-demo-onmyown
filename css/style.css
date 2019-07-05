@@ -1,0 +1,33 @@
+#canvas{
+  background: green;
+  display: block;
+}
+
+body{
+  margin: 0px;
+}
+
+html{
+}
+
+.actions{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.actions > #brush{
+  display: none;
+}
+
+.actions.x > #brush{
+  display: inline-block;
+}
+.actions.x > #eraser{
+  display: none
+}
+
+/*
+特性检测
+
+ontouchstart 和 onmousedown 获取坐标的区别，藏在 aaa 里面。console.log('aaa')看一下就知道了。
+*/
