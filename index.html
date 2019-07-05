@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
   <title>JS Bin</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,11 +11,37 @@
 <body>
   <canvas id="canvas" width=300 height=300></canvas>
   <div id=actions class="actions">
-    <button id=eraser>橡皮擦</button>
-    <button id=brush>画笔</button>
+  	<svg id=pen class="active icon" aria-hidden="true">
+    	<use xlink:href="#icon-pen"></use>
+	</svg>
+	<svg id=eraser class="icon" aria-hidden="true">
+    	<use xlink:href="#icon-eraser"></use>
+	</svg>
+	<svg id="clear" class="icon" aria-hidden="true">
+    	<use xlink:href="#icon-clear"></use>
+	</svg>
+	<svg id="download" class="icon" aria-hidden="true">
+    	<use xlink:href="#icon-save"></use>
+	</svg>
+    <!-- <button id=eraser>橡皮擦</button>
+    <button id=brush>画笔</button> -->
   </div>
+  <ol class="colors">
+  	<li id=black class="black active"></li>
+  	<li id=red class="red"></li>
+  	<li id=green class="green"></li>
+  	<li id=yellow class="yellow"></li>
+  </ol>
+  <ol class="sizes">
+  	<li id="thick" class="thick"></li>
+  	<li id="medium" class="medium"></li>
+  	<li id="thin" class="thin"></li>
+  </ol>
 
   <script src="./js/main.js"></script>
+  <script src="//at.alicdn.com/t/font_1279793_t0c0ddji1js.js"></script>
+  <script src="//at.alicdn.com/t/font_1279781_cpuqrq3obzi.js"></script>
+  <script src="//at.alicdn.com/t/font_1279419_gzsflopcl96.js"></script>
 </body>
 
 </html>
